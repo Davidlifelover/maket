@@ -291,22 +291,21 @@ body{
   padding: 8px 21px 7px 22px;
 }
 
-
-
-.block__container{
-  background-color: whitesmoke; /*чтобы видеть границы контейнера*/
+.aside__main-nav{
   width: 320px;
   padding: 19px 24px 32px 24px;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
-.block__main__nav{
+
+.aside__main__nav{
   height: 100%;
 }
-.block__burger-cross{
+.aside__burger-cross{
   margin-right: 16px;
   bottom: 7px;
   position: relative;
 }
-.block__search{
+.aside__search{
   margin-left: 78px;
   bottom: 7px;
   position: relative;
@@ -316,7 +315,7 @@ body{
   padding-top: 50px;
   padding-bottom: 236px;
 }
-.menu__items{
+.menu__item{
   margin-bottom: 32px;
 }
 .menu__link{
@@ -324,6 +323,12 @@ body{
   font-weight: 500;
 }
 .menu__link--active{
+  color: #7E7E82;
+}
+.menu__link:hover{
+  color: #ff3f7a;
+}
+.menu__link--active:hover{
   color: #7E7E82;
 }
 .menu__link--active::before{
@@ -346,6 +351,13 @@ body{
 .main-nav__contact{
   display: flex;
   flex-direction: column;
+  font-style: normal;
+}
+.contact__mail:hover{
+  color: #ff3f7a;
+}
+.contact__tel:hover{
+  color: #ff3f7a;
 }
 .contact__mail{
   margin-top: 16px;
@@ -370,5 +382,11 @@ body{
   color: #1B1C21;
 }
 .lang__link--active{
+  color: #7E7E82;
+}
+.lang__link:hover{
+  color: #ff3f7a;
+}
+.lang__link--active:hover{
   color: #7E7E82;
 }
