@@ -290,9 +290,22 @@ body{
   border: 2px solid #B8FFEC;
   padding: 8px 21px 7px 22px;
 }
+.nav__link:hover{
+  color: #FF3E79;
+}
+.nav__link--active:hover{
+  color: #7E7E82;
+  cursor: default;
+}
+.about__use:hover{
+  color: #FF3E79;
+}
+.about__show-more:hover{
+  color: #FF3E79;
+}
 
 
-   /*aside*/
+ /*aside*/
 .aside__main-nav{
   height: 100%;
   width: 320px;
@@ -303,6 +316,7 @@ body{
   margin-right: 16px;
   bottom: 7px;
   position: relative;
+  padding-bottom: 50px;
 }
 .aside__search{
   margin-left: 78px;
@@ -311,7 +325,6 @@ body{
 }
 .main-nav__menu{
   display: block;
-  padding-top: 50px;
   padding-bottom: 236px;
 }
 .menu__item{
@@ -323,9 +336,10 @@ body{
 }
 .menu__link--active{
   color: #7E7E82;
+  cursor: default;
 }
 .menu__link:hover{
-  color: #ff3f7a;
+  color: #FF3E79;
 }
 .menu__link--active:hover{
   color: #7E7E82;
@@ -353,10 +367,10 @@ body{
   font-style: normal;
 }
 .contact__mail:hover{
-  color: #ff3f7a;
+  color: #FF3E79;
 }
 .contact__tel:hover{
-  color: #ff3f7a;
+  color: #FF3E79;
 }
 .contact__mail{
   margin-top: 16px;
@@ -382,9 +396,10 @@ body{
 }
 .lang__link--active{
   color: #7E7E82;
+  cursor: default;
 }
 .lang__link:hover{
-  color: #ff3f7a;
+  color: #FF3E79;
 }
 .lang__link--active:hover{
   color: #7E7E82;
