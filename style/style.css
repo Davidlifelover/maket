@@ -84,6 +84,9 @@ body{
     padding-bottom: 10px;
     gap: 20px;
   }
+  .nav__link{
+    color: #7E7E82;
+  }
   .about__content{
   padding: 24px 16px 16px 24px;
   }
@@ -115,6 +118,16 @@ body{
   .about__show-more:hover{
     color: #FF3E79;
   }
+  .logo:hover{
+    filter: brightness(80%);
+  }
+  .nav__link:hover{
+    color: #FF3E79;
+  }
+  .nav__link--active:hover{
+    color: #7E7E82;
+    cursor: default;
+  }
 
   /*section*/
   .section__title{
@@ -132,8 +145,6 @@ body{
   .brand__list{
     display: grid;
     grid-template-columns: repeat(1, auto);
-    row-gap: 16px;
-    column-gap: 16px;
     display: none;
   }
   .brand__item{
@@ -163,7 +174,6 @@ body{
 
   .section__swipper{
     margin-top: 16px;
-    width: 240px;
     height: 100px;
   }
   .swiper-button-prev,
@@ -190,6 +200,104 @@ body{
   }
   .swiper-pagination-bullet-active {
       background-color: #B5B6BC !important;
+  }
+
+  /*aside*/
+  .aside__main-nav{
+    height: 100%;
+    width: 320px;
+    padding: 19px 24px 32px 24px;
+  }
+  .aside__burger-cross{
+    margin-right: 16px;
+    bottom: 7px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .aside__search{
+    margin-left: 78px;
+    bottom: 7px;
+    position: relative;
+  }
+  .main-nav__menu{
+    display: block;
+  }
+  .menu__item{
+    margin-bottom: 32px;
+  } 
+  .menu__link{
+    color:  #1B1C21;
+    font-weight: 500;
+  }
+  .menu__link--active{
+    color: #7E7E82;
+    cursor: default;
+  }
+  .menu__link:hover{
+    color: #FF3E79;
+  }
+  .menu__link--active:hover{
+    color: #7E7E82;
+  }
+  .menu__link--active::before{
+    content: '';
+    border-right: 3px solid #41F6D7;
+    border-radius: 3px;
+    position: relative;
+    right: 24px;
+  }
+  .main-nav__user-buttons{
+    display: flex;
+    gap: 16px;
+  }
+  .button:hover{
+    filter: hue-rotate(230deg);
+  }
+  .logo:hover{
+    filter: brightness(80%);
+  }
+  .main-nav__contact{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+  }
+  .contact__mail:hover{
+    color: #FF3E79;
+  }
+  .contact__tel:hover{
+    color: #FF3E79;
+  }
+  .contact__mail{
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .contact__tel{
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.6px;
+  }
+  .contact a{
+    color: #1B1C21;
+  }
+  .main-nav__lang{
+    display: flex;
+    gap: 7px;
+  }
+  .lang__link{
+    color: #1B1C21;
+  }
+  .lang__link--active{
+    color: #7E7E82;
+    cursor: default;
+  }
+  .lang__link:hover{
+    color: #FF3E79;
+  }
+  .lang__link--active:hover{
+    color: #7E7E82;
   }
 }
 
@@ -309,12 +417,210 @@ body{
   .swiper {
     display: none !important;
  }
+    
  .brand__item:nth-child(n+7) {
   display: none;
-}
-.brand__list.visible .brand__item:nth-child(n+7) {
+ } 
+ .brand__list.visible .brand__item:nth-child(n+7) {
   display: flex;
-}
+ }
+
+   /*aside*/
+  .aside__main-nav{
+    height: 100%;
+    width: 320px;
+    padding: 19px 24px 32px 24px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  }
+  .aside__burger-cross{
+    margin-right: 16px;
+    bottom: 7px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .aside__search{
+    margin-left: 78px;
+    bottom: 7px;
+    position: relative;
+  }
+  .main-nav__menu{
+    display: block;
+  }
+  .menu__item{
+    margin-bottom: 32px;
+  } 
+  .menu__link{
+    color:  #1B1C21;
+    font-weight: 500;
+  }
+  .menu__link--active{
+    color: #7E7E82;
+    cursor: default;
+  }
+  .menu__link:hover{
+    color: #FF3E79;
+  }
+  .menu__link--active:hover{
+    color: #7E7E82;
+  }
+  .menu__link--active::before{
+    content: '';
+    border-right: 3px solid #41F6D7;
+    border-radius: 3px;
+    position: relative;
+    right: 24px;
+  }
+  .main-nav__user-buttons{
+    display: flex;
+    gap: 16px;
+  }
+  .button:hover{
+    filter: hue-rotate(230deg);
+  }
+  .logo:hover{
+    filter: brightness(80%);
+  }
+  .main-nav__contact{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+  }
+  .contact__mail:hover{
+    color: #FF3E79;
+  }
+  .contact__tel:hover{
+    color: #FF3E79;
+  }
+  .contact__mail{
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .contact__tel{
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.6px;
+  }
+  .contact a{
+    color: #1B1C21;
+  }
+  .main-nav__lang{
+    display: flex;
+    gap: 7px;
+  }
+  .lang__link{
+    color: #1B1C21;
+  }
+  .lang__link--active{
+    color: #7E7E82;
+    cursor: default;
+  }
+  .lang__link:hover{
+    color: #FF3E79;
+  }
+  .lang__link--active:hover{
+    color: #7E7E82;
+  }
+
+  /*aside*/
+  .aside__main-nav{
+    height: 100%;
+    width: 320px;
+    padding: 19px 24px 32px 24px;
+  }
+  .aside__burger-cross{
+    margin-right: 16px;
+    bottom: 7px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .aside__search{
+    margin-left: 78px;
+    bottom: 7px;
+    position: relative;
+  }
+  .main-nav__menu{
+    display: block;
+  }
+  .menu__item{
+    margin-bottom: 32px;
+  } 
+  .menu__link{
+    color:  #1B1C21;
+    font-weight: 500;
+  }
+  .menu__link--active{
+    color: #7E7E82;
+    cursor: default;
+  }
+  .menu__link:hover{
+    color: #FF3E79;
+  }
+  .menu__link--active:hover{
+    color: #7E7E82;
+  }
+  .menu__link--active::before{
+    content: '';
+    border-right: 3px solid #41F6D7;
+    border-radius: 3px;
+    position: relative;
+    right: 24px;
+  }
+  .main-nav__user-buttons{
+    display: flex;
+    gap: 16px;
+  }
+  .button:hover{
+    filter: hue-rotate(230deg);
+  }
+  .logo:hover{
+    filter: brightness(80%);
+  }
+  .main-nav__contact{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+  }
+  .contact__mail:hover{
+    color: #FF3E79;
+  }
+  .contact__tel:hover{
+    color: #FF3E79;
+  }
+  .contact__mail{
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .contact__tel{
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.6px;
+  }
+  .contact a{
+    color: #1B1C21;
+  }
+  .main-nav__lang{
+    display: flex;
+    gap: 7px;
+  }
+  .lang__link{
+    color: #1B1C21;
+  }
+  .lang__link--active{
+    color: #7E7E82;
+    cursor: default;
+  }
+  .lang__link:hover{
+    color: #FF3E79;
+  }
+  .lang__link--active:hover{
+    color: #7E7E82;
+  }
 }
 
 @media (min-width: 1120px) { /*Компьютер*/
@@ -438,7 +744,6 @@ body{
     display: none;
   }
 
-
   /*aside*/
   .aside__main-nav{
     height: 100%;
@@ -463,7 +768,7 @@ body{
   }
   .menu__item{
     margin-bottom: 32px;
-  }
+  } 
   .menu__link{
     color:  #1B1C21;
     font-weight: 500;
