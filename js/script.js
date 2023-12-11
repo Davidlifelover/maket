@@ -1,24 +1,25 @@
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
+    const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+      
+        pagination: {
+            el: '.swiper-pagination',
+        },
+      
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+      
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+      
+        spaceBetween: 16,
+        mousewheel: true,
+        keyboard: true,
+      });
 
-  pagination: {
-      el: '.swiper-pagination',
-  },
-
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-
-  scrollbar: {
-      el: '.swiper-scrollbar',
-  },
-
-  spaceBetween: 16,
-  mousewheel: true,
-  keyboard: true,
-});
 
 const button = document.querySelector('.show-more__text');
 const elements = document.querySelector('.brand__list');

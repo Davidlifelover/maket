@@ -173,9 +173,11 @@ body{
   }
 
   .section__swipper{
-    margin-top: 16px;
+    margin-top: 16px;  
     height: 100px;
+    padding: 0 16px 0 16px !important;
   }
+ 
   .swiper-button-prev,
   .swiper-button-next {
       display: none !important;
